@@ -1,0 +1,787 @@
+/*
+===================================
+============Fichier CSS============
+===================================
+Projet : PTS1 Site Web (Les métiers de l'informatique)
+GROUPEcC1  :DELAMARRE Paul , VERRIERE Maxime , BERTAUD Nathan
+            SCHUITMAKER Marten , BACHELOT Tom
+===================================
+===================================
+===================================
+*/
+
+
+
+/*
+Différentes pages
+
+Accueil
+A son compte
+Fiches métiers
+Fiches métiers Interview
+*/
+
+
+/*
+===================================
+===================================
+CSS Commun à toutes les pages html du site.
+===================================
+===================================
+*/
+/*
+===================================
+CSS du 'html' de toutes les pages.
+===================================
+*/
+html
+{
+  scroll-behavior: smooth;
+  padding: 0%;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #E0E0E0;
+}
+/*
+===================================
+CSS du header de toutes les pages.
+===================================
+*/
+header
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(26, 44, 49, 0.7);
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  box-shadow: 0px 4px 4px grey;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 1;
+  color: white;
+}
+/*
+===================================
+CSS du body de toutes les pages.
+===================================
+*/
+body
+{
+  background-color: white;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  background-color: #E7E6E4;
+}
+body ul
+{
+  list-style-type: none;
+}
+
+body li
+{
+  font-family: 'Open Sans', sans-serif;
+}
+/*
+===================================
+CSS du fil d' Ariane de toutes les pages.
+===================================
+*/
+#filDariane
+{
+  text-align: left;
+}
+
+/*
+===================================
+CSS du footer de toutes les pages.
+===================================
+*/
+footer
+{
+ background-color: #24363B;
+ padding: 10px;
+ display: flex;
+ flex-direction: row;
+ align-content: center;
+ align-items: center;
+ width: 100%;
+ bottom: 0px;
+ color: #E0E0E0;
+ letter-spacing: 2px;
+ border-top:  5px groove #E0E0E0;
+ text-align: center;
+ margin-top: 5%;
+}
+.centrefooter
+{
+  width: 100%;
+  margin-bottom: 2em;
+}
+footer li, header li
+{
+  font-family: 'Open Sans', sans-serif;
+  margin: 10px;
+  display: inline-block;
+  color: white;
+  position: relative;
+}
+
+footer li:hover, header li:hover
+{
+  color: #FF4C1C;
+  cursor: pointer;
+}
+/*
+===================================
+CSS des liens 'a' de toutes les pages.
+===================================
+*/
+a
+{
+  font-family: 'Open Sans', sans-serif;
+  color:white;
+  font-size: 15px;
+  text-decoration: none;
+}
+/*
+Gestion du passage de la souris sur les liens.
+*/
+a:hover
+{
+  color: #C97F4E;
+  cursor: pointer;
+}
+
+header a:hover
+{
+  color: rgb(238, 124, 48);
+  cursor: pointer;
+}
+
+/*
+===================================
+CSS des paragraphes 'p' de toutes les pages.
+===================================
+*/
+p{
+  font-size: 20px;
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+}
+/*
+===================================
+CSS des tites 'h1,h2' de toutes les pages.
+===================================
+*/
+h1
+{
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  display: inline-block;
+  color: white;
+}
+
+h2
+{
+  font-family: 'Roboto', sans-serif;
+}
+
+h2.soustitre
+{
+  font-size: 30px;
+  color: #24363B;
+  font-family: 'Roboto', sans-serif;
+}
+/*Paterne des Titre principal*/
+#titre
+{
+  font-size: 40px;
+  margin-bottom: 5%;
+  color: #24363B;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  margin-top: 10%;
+}
+/*
+===================================
+CSS des balises 'strong' de toutes les pages.
+===================================
+*/
+strong
+{
+  color: #C97F4E;
+}
+
+/*
+===================================
+===================================
+===================================
+*/
+
+
+
+
+
+/*
+===================================
+===================================
+CSS spécifique à Accueil.html
+===================================
+===================================
+*/
+/*
+===================================
+CSS du 'strong' de classe ".SInfoHellix".
+===================================
+*/
+.SInfoHellix
+{
+  color: rgb(238, 124, 48);
+  font-size: 65px;
+}
+/*
+===================================
+CSS de l'architecture des différents blocs de la page Accueil.html
+===================================
+*/
+.section1
+{
+  width: 100%;
+  height: 47.3em;
+  background-image: url(img/imagefond.JPEG);
+  background-size: cover;
+  display: flex;
+}
+.section1Text
+{
+  color: white;
+  width: 100%;
+  background-color: rgba(36, 54, 59, 0.7);
+  margin: 0;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.section1Text > h1 , .section1Text > p
+{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.section2
+{
+  background-color: white;
+  padding: 15px;
+}
+.bloc
+{
+  text-align: center;
+  padding: 3em;
+  padding-top: 30em;
+  padding-bottom: 30em;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.bloc > p
+{
+  color: #C97F4E;
+}
+.lesBlocks
+{
+  margin-top: 30em;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.textBlock
+{
+  width: 50%;
+  padding: 3.5em;
+  text-align: center;
+}
+/*
+Gestion de l'alternance des couleurs par rapport au blocs.
+*/
+#B1 , #B3
+{
+    background-color: #C97F4E ;
+}
+#B2 > div > h1 , #B4 > div > h1
+{
+  color: #C97F4E;
+}
+/*
+===================================
+CSS des boutons de Accueil.html
+===================================
+*/
+.boutonB
+{
+  color: white;
+  border : solid 2px white;
+  border-radius: 12px;
+  margin-top: 30px;
+  padding: 0.6em;
+  text-decoration: none;
+  transition: 0.5s;
+  min-width: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.boutonM
+{
+  color: #C97F4E;
+  border : solid 2px #C97F4E;
+  border-radius: 12px;
+  margin-top: 30px;
+  padding: 0.6em;
+  text-decoration: none;
+  transition: 0.5s;
+  min-width: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/*
+Gestion du passage de la souris sur les boutons avec transition.
+*/
+.boutonB:hover
+{
+  background-color: white;
+  color: #C97F4E;
+  transition: 0.5s;
+}
+.boutonM:hover
+{
+  background-color: #C97F4E;
+  color: white;
+  transition: 0.5s;
+}
+/*
+===================================
+===================================
+===================================
+*/
+
+
+
+
+
+/*
+===================================
+===================================
+CSS spécifique des FicheMetier.html
+===================================
+===================================
+*/
+
+/* Fiches métier Interview */
+.video
+{
+  display: flex;
+  flex-direction: column;
+  margin-right: 20%;
+  margin-top: 10%;
+}
+/* audio métier Interview */
+audio{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+===================================
+architecture des fiches métier Interview
+===================================
+*/
+.itw1
+{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+article.art1, aside.art2
+{
+  width: 40%;
+}
+
+.centre
+{
+  text-align: center;
+}
+
+.listeCompte, .listeCompte:hover
+{
+  color: #24363B;
+  text-emphasis: none;
+  cursor: default;
+  font-size: 20px;
+  padding-right: 40px;
+}
+
+.taille
+{
+  margin-bottom: 10%;
+}
+
+#pdf
+{
+  text-align: center;
+  margin-top: 5%;
+}
+#pdf :hover
+{
+  background-color: #24363B;
+  color: #E0E0E0;
+}
+
+#pdf span :hover
+{
+  color: #C97F4E;
+}
+
+#pdf a
+{
+  font-size: 30px;
+  color: #24363B;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+#pdf span
+{
+  color: #C97F4E;
+}
+
+
+/*
+===================================
+Modification sur les images
+===================================
+*/
+
+img.imgFat
+{
+  height: 350px;
+  width: 600px;
+}
+div.imgCentre
+{
+  text-align: center;
+  margin-bottom: 5%;
+  text-align: center;
+  background-color: rgb(56, 55, 55);
+  position: relative;
+  -moz-box-shadow: 4px 4px 10px rgb(92, 92, 92);
+  -webkit-box-shadow: 4px 4px 10px  rgb(92, 92, 92);
+  box-shadow:4px 4px 6px  rgb(92, 92, 92);
+}
+img.soncompte
+{
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 150px;
+  width: 150px;
+  margin: auto;
+}
+.imgpro
+{
+  height: 90px;
+  width: 70px;
+  float: left;
+  margin: 1%;
+  margin-right: 3%;
+}
+
+/*
+===================================
+===================================
+===================================
+*/
+
+
+
+
+
+/*
+===================================
+===================================
+CSS spécifique à ASonCompte.html
+===================================
+===================================
+*/
+/*
+===================================
+architecture des différents blocs de ASonCompte.html
+===================================
+*/
+.paraCentre
+{
+  width: 960px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10%;
+}
+
+.paraCentreBas
+{
+  width: 960px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10%;
+}
+
+.question
+{
+ text-align: center;
+ margin-bottom: 10%;
+}
+
+.bandeau
+{
+  background-color: #C97F4E;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bandeau2
+{
+  background-color: #C97F4E;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+
+/*
+===================================
+CSS des pages spécifiques FicheMetierInterviewMenu.html et selection_fiche.html
+===================================
+*/
+}
+.container1 {
+	margin: auto;
+}
+.titleTexte {
+  display:block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+.titleTexte span {
+  color:rgb(102, 96, 96);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+.image-box {
+	display: block;
+	margin-top:2%;
+	text-align: center;
+}
+.image-box:first-child {
+	margin-top:10%;
+}
+.image-box a {
+  margin: auto;
+  display: inline-block;
+}
+.image-box figure {
+  margin: auto;
+  color: #E0E0E0;
+  opacity: 0.8;
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 45px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  -moz-border-radius:10px 0;
+  -webkit-border-radius:10px 0;
+  border-radius:10px 0;
+  border: 3px solid black;
+  -moz-box-shadow: 4px 4px 10px rgb(92, 92, 92);
+  -webkit-box-shadow: 4px 4px 10px  rgb(92, 92, 92);
+  box-shadow:4px 4px 6px  rgb(92, 92, 92);
+}
+
+/* place que prend l'image à l'intérieur du cadre */
+.image-box figure img {
+  vertical-align: top;
+  backface-visibility: hidden;
+}
+.image-box figure figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1em;
+  opacity: 0;
+  z-index: 2;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.image-box figure h3
+{
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.image-box figure h3 span
+{
+  display: block;
+  font-weight: bolder;
+  font-size: 50px;
+}
+.image-box figure:hover > img
+{
+  opacity: 0.5;
+  filter: blur(3px);
+  transition-duration:0.75s;
+  /* transition latence contraste */
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.image-box figure:hover figcaption
+{
+  opacity: 1;
+  transition-duration:0.75s;
+  /* transition latence texte */
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+/*
+CSS des animations des titres
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+#title {
+  margin-top: 10%;
+  text-align:center;
+  color:#24363B;
+  font-family: 'open sans', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  overflow:hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+}
+.titleTexte:first-of-type {
+  animation: showup 8s;
+}
+
+.titleTexte:last-of-type {
+  animation: reveal 8s;
+}
+
+.titleTexte:last-of-type span {
+  animation: slidein 8s;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:100%;}
+    80% {opacity:1;}
+}
+/*
+===================================
+===================================
+===================================
+*/
+
+
+
+
+
+/*
+===================================
+===================================
+CSS spécifique à Actu.html
+===================================
+===================================
+*/
+.actu
+{
+  display: flex;
+  padding: 2em;
+  background-color:rgba(26, 44, 49, 0.2);
+}
+.actutext
+{
+  margin-left: 1em
+}
+/*
+===================================
+===================================
+===================================
+*/
+
+
+
+
+
+/*
+===================================
+===================================
+CSS spécifique à Sources.html
+===================================
+===================================
+*/
+a.lien
+{
+  color: #24363B;
+  font-size: 30px;
+}
+/*
+Gestion du passage de la souris sur les liens de Sources.html.
+*/
+a.lien:hover
+{
+  color: #C97F4E;
+  font-size: 30px;
+}
